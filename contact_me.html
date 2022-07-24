@@ -4,21 +4,46 @@
 <head>
   <meta charset="utf-8">
   <title>Luca Personal Site</title>
+    <link rel="stylesheet" href="css/styles.css">
+      <link rel="icon" href="favicon.ico">
 </head>
 <body>
-  <h1>Contacts</h1>
-  <p>Luca Borrelli</p>
-  <p>My phone number: +39 342 090 53 63</p>
-  <p>My mail: lg.borrelli@hotmail.com</p>
+  <div class="div-2">
+    <h1>My Contacts</h1>
+    <div class="">
+      <table>
+        <tr>
+          <td><img src="images/phone.png" alt="phone-image"></td>
+          <td class="contact-table"> T: +39 342 090 53 63</td>
+        </tr>
+        <tr>
+          <td><img src="images/mail.png" alt="mail-image"></td>
+          <td class="contact-table"> <a href = "mailto: lg.borrelli@hotmail.com">M: lg.borrelli@hotmail.com</a></td>
+        </tr>
+      </table>
+
+
+    </div>
+
+    <hr>
+    <h1>Send me a message:</h1>
+    <form action="mailto:lucag.borrelli@gmail.com" method="post" enctype="text/plain">
+      <label>Your Name:</label>
+      <input type="text" name="YourName" value=""><br>
+      <label>Your Email: </label>
+      <input type="email" name="YourMail" value=""><br>
+      <label>Your message: </label><br>
+      <textarea name="YourMessagee" rows="8" cols="80"></textarea><br>
+      <input type="submit" name=""><br>
   <hr>
-  <h2>Send me a message:</h2>
-  <form action="mailto:lucag.borrelli@gmail.com" method="post" enctype="text/plain">
-    <label>Your Name:</label>
-    <input type="text" name="YourName" value=""><br>
-    <label>Your Email: </label>
-    <input type="email" name="YourMail" value=""><br>
-    <label>Your message: </label><br>
-    <textarea name="YourMessagee" rows="8" cols="80"></textarea><br>
-    <input type="submit" name=""><br>
+
+  <table class="bottom-buttons">
+    <tr>
+      <td><a href="index.html"><img src="images/main-page.png" alt="contact-me-image"></a></td>
+      <td><a href="my_hobbies.html"><img src="images/my-hobbies.png" alt="my-hobbies-image"></td>
+    </tr>
+  </table>
+  </div>
+
 
 </body>
